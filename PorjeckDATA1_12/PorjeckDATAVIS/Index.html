@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script> 
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#background">Introduction</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#section1">Waste Memorial</a></li>
+            <li><a href="#section2">Manufacturing Waste</a></li>
+            <li><a href="#section3">Agriculture Waste</a></li>
+            <li><a href="#section4">Energy Waste</a></li>
+        </ul>
+    </nav>
+
+     <!-- Header Section -->
+     <header class="header">
+        <h1>Welcome to the Waste Management Dashboard</h1>
+        <p>An interactive platform to explore waste production trends across various sectors and regions.</p>
+    </header>
+
+    <!-- Background and Introduction Section -->
+    <section class="background" id="background">
+        <h2>Background and Introduction</h2>
+        <p>
+            The Waste Management Dashboard is an innovative platform dedicated to visualizing and analyzing waste generation trends across various sectors and regions. Built on meticulously prepared OECD waste management data, it aims to shed light on the growing global waste crisis, foster awareness, and promote sustainable waste reduction practices.
+        </p>
+        <p>
+    </section>
+
+
+    <!-- Aim and Objectives Section -->
+    <section class="objectives" id="objectives">
+        <h2>Aim and Objectives</h2>
+        <p><strong>Aim:</strong> To create an accessible, visually appealing dashboard that provides actionable insights into waste generation and its environmental impacts.</p>
+            <p><strong>Visualize Trends:</strong> Highlight waste production trends across sectors like manufacturing, agriculture, and energy generation.</p>
+            <p><strong>Promote Awareness:</strong> Educate users about the scale and impact of waste generation.</p>
+            <p><strong>Support Sustainability:</strong> Encourage sustainable practices by showcasing recovery and recycling rates.</p>
+            <p><strong>Interactivity:</strong> Provide an engaging user experience with interactive visualizations.</p>
+        </p>
+        </ul>
+    </section>
+
+    <!-- First Section -->
+    <div>
+        <section class="first" id="section1">
+            <h2>Waste Memorial</h2>
+            <p>This website visualizes the amount of waste created over time, providing an interactive platform to explore trends in waste production across different regions and sectors. </p>
+            <p>It highlights the growth of waste generation, offering insights into its environmental impact and promoting awareness around sustainability and waste reduction efforts.</p>
+        </section>
+    </div>
+
+    <!-- Scroll Down Section -->
+<div class="scroll-down-container">
+    <p class="scroll-text">Scroll Down to Explore More</p>
+    <div class="arrow-down"></div>
+</div>
+
+    <!-- Second Section -->
+    <div>
+        <section class="second" id="section2">
+            <h1>Manufacturing Waste by Country</h1>
+            <div id="chart"></div>
+            <script src="https://d3js.org/d3.v6.min.js"></script>
+            <script src="stacked_chart.js"></script>
+
+            <p>These are the amount of waste produce by Manufacterer</p>
+
+        </section>
+    </div>
+
+    <!-- Third Section -->
+    <div>
+        <section class="third" id="section3">
+            <div class="container">
+                <h1>Primary Waste Generated in Agriculture, Forestry, and Fishing</h1>
+                <canvas id="AreaGraph"></canvas>
+                <script src="area_graph.js"></script>
+                <p>These are the amount of waste produce from Agriculture, Forestry, and Fishing</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fourth Section -->
+    <div>
+        <section class="forth" id="section4">
+            <h1>Waste Produced in Energy Sectors</h1>
+            <div id="barchart"></div>
+            <!-- Ensure Canvas has proper width and height -->
+            <canvas id="BarChart" width="800" height="400"></canvas>
+            <!-- No need to load Chart.js again -->
+            <script src="bar_chart.js"></script>
+
+            <p>These are the amount of waste produce from Electricity, Gas, Steam and Air conditioning</p>
+        </section>
+    </div>
+</body>
+</html>
